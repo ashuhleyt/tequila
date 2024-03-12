@@ -215,6 +215,28 @@
           null
         ]
       },
+      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/spec/factories/bar.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/spec/factories/drink.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/ashleyturner/turing/5mod/redo_projects/tequila/config/routes.rb": {
         "lines": [
           1,
@@ -222,6 +244,8 @@
           null,
           null,
           null,
+          null,
+          1,
           null
         ]
       },
@@ -249,36 +273,22 @@
           null
         ]
       },
-      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/spec/models/drink_spec.rb": {
+      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/app/controllers/bars_controller.rb": {
         "lines": [
           1,
-          null,
           1,
           1,
-          2,
-          null,
-          null,
-          1,
-          2,
-          2,
-          2,
           null,
           null
         ]
       },
-      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/app/models/drink.rb": {
+      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/app/controllers/application_controller.rb": {
         "lines": [
           1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1710208806
+    "timestamp": 1710213115
   }
 }
