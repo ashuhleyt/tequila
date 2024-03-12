@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'Bar Index Page' do 
   before :each do 
     @bars = create_list(:bar, 3)
-    visit "/parents"
+    visit "/bars"
   end
 
   describe 'Parent Index' do 
@@ -11,9 +11,6 @@ RSpec.describe 'Bar Index Page' do
       @bars.each do |bar|
         expect(page).to have_content(bar.name)
       end
-
-      save_and_open_page
-      
     end
   end
 end
