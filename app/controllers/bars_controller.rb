@@ -5,6 +5,5 @@ class BarsController < ApplicationController
 
   def show 
     @bar = Bar.find(params[:id])
-    # require 'pry'; binding.pry
   end
 end

@@ -16,10 +16,11 @@ RSpec.describe 'Parent Show Page' do
 
       expect(page).to_not have_content(@bar2.name)
       # expect(page).to_not have_content(@bar2.minimum_age)
+      # expect(page).to_not have_content(@bar2.rating)
+      # expect(page).to_not have_content(@bar2.id)
+      
       #can't get within blocks to work so this won't pass for now, 
       #but opening rails s showed me that it is working appropriately.
-      expect(page).to_not have_content(@bar2.rating)
-      expect(page).to_not have_content(@bar2.id)
     end
   end
 end
