@@ -16,6 +16,7 @@ RSpec.describe 'Parent Show Page' do
       expect(page).to have_content(@bar.id)
 
       expect(page).to_not have_content(@bar2.name)
+      save_and_open_page
       # expect(page).to_not have_content(@bar2.minimum_age)
       # expect(page).to_not have_content(@bar2.rating)
       # expect(page).to_not have_content(@bar2.id)
