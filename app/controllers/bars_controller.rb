@@ -1,6 +1,6 @@
 class BarsController < ApplicationController 
   def index 
-    @bars = Bar.all
+    @bars = Bar.ordered_by_creation_time
   end
 
   def show 
