@@ -12,5 +12,5 @@
     Number of Drinks Offered: <%= @bar.drink_count %>
   </h4>
 
-  <%= link_to "See #{@bar.name}s Drinks" %>
+  <%= link_to "See #{@bar.name}s Drinks", "/bars/#{@bar.id}/drinks" %>
 </center>

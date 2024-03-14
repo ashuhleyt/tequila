@@ -32,7 +32,8 @@ RSpec.describe 'Parent Show Page' do
       # 'parents/:id/drinks
 
       expect(page).to have_link("See #{@bar.name}s Drinks")
-      save_and_open_page
+      click_link("See #{@bar.name}s Drinks")
+      expect(current_path).to eq("/bars/#{@bar.id}/drinks")
     end
   end
 end
