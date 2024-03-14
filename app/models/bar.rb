@@ -8,4 +8,8 @@ class Bar < ApplicationRecord
   def self.ordered_by_creation_time
     order(created_at: :desc)
   end
+
+  def drink_count
+    self.drink.count
+  end
 end
