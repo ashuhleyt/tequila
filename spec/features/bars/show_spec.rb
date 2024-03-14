@@ -16,7 +16,6 @@ RSpec.describe 'Parent Show Page' do
       expect(page).to have_content(@bar.id)
 
       expect(page).to_not have_content(@bar2.name)
-      save_and_open_page
       # expect(page).to_not have_content(@bar2.minimum_age)
       # expect(page).to_not have_content(@bar2.rating)
       # expect(page).to_not have_content(@bar2.id)
@@ -27,7 +26,13 @@ RSpec.describe 'Parent Show Page' do
 
     it 'I see a count of the number of children associated with the parent' do 
       expect(page).to have_content(@bar.drink.count)
-      #should be using activerecord here???
+    end
+
+    it 'I see a link to take me to that parents child page' do 
+      # 'parents/:id/drinks
+
+      expect(page).to have_link("See #{@bar.name}s Drinks")
+      save_and_open_page
     end
   end
 end
