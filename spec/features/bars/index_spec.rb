@@ -30,5 +30,14 @@ RSpec.describe 'Bar Index Page' do
       expect(@bar5.name).to appear_before(@bar4.name)
       expect(@bar6.name).to appear_before(@bar5.name)
     end
+
+    it 'I see a link to create a new parent' do 
+      expect(page).to have_link("Create New Bar")
+    end
+
+    it 'when I click this link, im taken to parent/new where I see a form to create a new parent' do 
+      click_link("Create New Bar")
+      expect(current_path).to eq("/bars/new")
+    end
   end
 end

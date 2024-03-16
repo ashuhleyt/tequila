@@ -29,8 +29,6 @@ RSpec.describe 'Parent Show Page' do
     end
 
     it 'I see a link to take me to that parents child page' do 
-      # 'parents/:id/drinks
-
       expect(page).to have_link("See #{@bar.name}s Drinks")
       click_link("See #{@bar.name}s Drinks")
       expect(current_path).to eq("/bars/#{@bar.id}/drinks")
