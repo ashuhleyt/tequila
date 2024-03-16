@@ -18,6 +18,9 @@ RSpec.describe 'Parent Child Index' do
 
     it 'I see a link to add a new child' do 
       expect(page).to have_link("Add a drink to #{@bar.name}!")
+      click_link("Add a drink to #{@bar.name}!")
+
+      expect(current_path).to eq("/bars/#{@bar.id}/drinks/new")
     end
   end
 end
