@@ -11,4 +11,15 @@ class DrinksController < ApplicationController
   def edit 
     @drink = Drink.find(params[:id])
   end
+
+  def update 
+    drink = Drink.find(params[:id])
+    drink.update(drink_params)
+    redirect_to "/drinks/#{drink.id}"
+  end
+
+  private 
+  def drink_params
+    params.permit(:name, :proof, :made_in_mexico)
+  end
 end
