@@ -1,6 +1,12 @@
 <center><h2>BARS</h2>
   <% @bars.each do |bar| %>
-    <li><%= bar.name %>
+    <br>
+    Name: <%= bar.name %>
+    <br>
+    Created At: <%= bar.created_at.strftime("%B %d, %Y %l:%M:%S %p") %>
+    <br>
   <% end %>
+
+  <%= link_to "Create New Bar", "/bars/new" %>
 
 </center>

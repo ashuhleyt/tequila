@@ -1,0 +1,15 @@
+<center>
+  <h2><%= @bar.name %>s Drinks Offered</h2>
+
+  <% @drinks.each do |drink| %>
+    <h4><br>
+    Name: <%= drink.name %>
+    <br>
+    Proof: <%= drink.proof %>
+    <br>
+    Made In Mexico: <%= drink.made_in_mexico %>
+    <br>
+    </h4>
+  <% end %>
+
+</center>

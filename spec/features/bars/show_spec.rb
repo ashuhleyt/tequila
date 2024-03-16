@@ -4,6 +4,7 @@ RSpec.describe 'Parent Show Page' do
   before :each do 
     @bar = create(:bar)
     @bar2 = create(:bar)
+    @drinks = create_list(:drink, 15, bar_id: @bar.id)
     visit "/bars/#{@bar.id}"
   end
 
@@ -21,6 +22,16 @@ RSpec.describe 'Parent Show Page' do
       
       #can't get within blocks to work so this won't pass for now, 
       #but opening rails s showed me that it is working appropriately.
+    end
+
+    it 'I see a count of the number of children associated with the parent' do 
+      expect(page).to have_content(@bar.drink.count)
+    end
+
+    it 'I see a link to take me to that parents child page' do 
+      expect(page).to have_link("See #{@bar.name}s Drinks")
+      click_link("See #{@bar.name}s Drinks")
+      expect(current_path).to eq("/bars/#{@bar.id}/drinks")
     end
   end
 end

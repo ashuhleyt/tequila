@@ -219,9 +219,9 @@
         "lines": [
           1,
           1,
-          8,
-          8,
-          8,
+          10,
+          10,
+          10,
           null,
           null
         ]
@@ -230,9 +230,9 @@
         "lines": [
           1,
           1,
-          12,
-          12,
-          12,
+          162,
+          162,
+          162,
           null,
           null
         ]
@@ -247,7 +247,10 @@
           null,
           1,
           1,
+          1,
+          1,
           null,
+          1,
           1,
           1,
           null
@@ -259,15 +262,82 @@
           null
         ]
       },
-      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/spec/features/bars/show_spec.rb": {
+      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/spec/features/bars/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          null,
+          4,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/spec/features/bars/new_spec.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           1,
+          null,
           1,
           1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/spec/features/bars/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
           null,
           null,
           1,
@@ -284,6 +354,16 @@
           null,
           null,
           null,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null
@@ -342,6 +422,16 @@
           null,
           1,
           1,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          null,
+          null,
+          1,
           2,
           null,
           null,
@@ -349,6 +439,16 @@
           2,
           2,
           2,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
           null,
           null
         ]
@@ -361,6 +461,14 @@
           1,
           1,
           1,
+          null,
+          1,
+          6,
+          null,
+          null,
+          1,
+          4,
+          null,
           null
         ]
       },
@@ -400,15 +508,12 @@
           null
         ]
       },
-      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/app/controllers/bars_controller.rb": {
+      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/app/controllers/bars_drinks_controller.rb": {
         "lines": [
           1,
           1,
-          1,
-          null,
-          null,
-          1,
-          1,
+          2,
+          2,
           null,
           null
         ]
@@ -416,6 +521,33 @@
       "/Users/ashleyturner/turing/5mod/redo_projects/tequila/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          null
+        ]
+      },
+      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/app/controllers/bars_controller.rb": {
+        "lines": [
+          1,
+          1,
+          5,
+          null,
+          null,
+          1,
+          3,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
           null
         ]
       },
@@ -434,6 +566,6 @@
         ]
       }
     },
-    "timestamp": 1710261476
+    "timestamp": 1710556866
   }
 }
