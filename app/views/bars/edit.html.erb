@@ -1,0 +1,10 @@
+<center><%= form_with url: "/bars/#{@bar.id}", method: :patch, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :minimum_age %>
+  <%= form.text_field :minimum_age %>
+  <%= form.label :rating %>
+  <%= form.text_field :rating %>
+  <%= form.submit "Update #{@bar.name}" %>
+<% end %>
+</center>
