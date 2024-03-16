@@ -1,0 +1,11 @@
+<center>
+  <%= form_with url: "/bars/#{@bar.id}/drinks", method: :post, local: true do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :proof %>
+    <%= f.number_field :proof %>
+    <%= f.label :made_in_mexico %>
+    <%= f.text_field :made_in_mexico %>
+    <%= f.submit 'Create Drink' %>
+  <% end %>
+</center>

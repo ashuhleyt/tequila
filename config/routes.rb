@@ -16,4 +16,5 @@ Rails.application.routes.draw do
 
   get "/bars/:id/drinks", to: "bars_drinks#index"
   get "/bars/:id/drinks/new", to: "bars_drinks#new"
+  post "/bars/:id/drinks", to: "bars_drinks#create"
 end
