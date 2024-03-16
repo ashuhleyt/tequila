@@ -254,6 +254,8 @@
           null,
           1,
           1,
+          1,
+          1,
           null,
           1,
           1,
@@ -293,10 +295,26 @@
           null
         ]
       },
-      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/app/controllers/bars_drinks_controller.rb": {
+      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/app/models/drink.rb": {
         "lines": [
           1,
           1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/app/controllers/drinks_controller.rb": {
+        "lines": [
+          1,
+          1,
+          0,
+          0,
+          null,
+          null,
           1,
           1,
           null,
@@ -323,20 +341,8 @@
           1,
           null
         ]
-      },
-      "/Users/ashleyturner/turing/5mod/redo_projects/tequila/app/models/drink.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null
-        ]
       }
     },
-    "timestamp": 1710559390
+    "timestamp": 1710565773
   }
 }

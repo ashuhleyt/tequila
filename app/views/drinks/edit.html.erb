@@ -1,0 +1,10 @@
+<center><%= form_with url: "/drinks/#{@drink.id}", method: :patch, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+  <%= form.label :proof %>
+  <%= form.text_field :proof %>
+  <%= form.label :made_in_mexico %>
+  <%= form.text_field :made_in_mexico %>
+  <%= form.submit "Update #{@drink.name}" %>
+<% end %>
+</center>
