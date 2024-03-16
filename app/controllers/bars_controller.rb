@@ -18,6 +18,6 @@ class BarsController < ApplicationController
 
   private
   def bar_params
-    params.permit(:name)
+    params.permit(:name, :minimum_age, :rating)
   end
 end
