@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get "/bars/:id", to: "bars#show", constraints: { id: /\d+/ }
   get "/bars/new", to: "bars#new", as: "new_bar"
   post "/bars", to: "bars#create"
+  get "/bars/:id/edit", to: "bars#edit"
+  patch '/bars/:id', to: 'bars#update'
 
   get "/drinks", to: "drinks#index"
   get "/drinks/:id", to: "drinks#show"

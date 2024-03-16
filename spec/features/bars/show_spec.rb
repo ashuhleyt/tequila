@@ -33,5 +33,12 @@ RSpec.describe 'Parent Show Page' do
       click_link("See #{@bar.name}s Drinks")
       expect(current_path).to eq("/bars/#{@bar.id}/drinks")
     end
+
+    it 'I see a link to update the parent' do 
+      expect(page).to have_link("Update #{@bar.name}")
+      click_link("Update #{@bar.name}")
+
+      expect(current_path).to eq("/bars/#{@bar.id}/edit")
+    end
   end
 end
