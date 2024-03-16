@@ -7,4 +7,8 @@ class DrinksController < ApplicationController
   def show 
     @drink = Drink.find(params[:id])
   end
+
+  def edit 
+    @drink = Drink.find(params[:id])
+  end
 end

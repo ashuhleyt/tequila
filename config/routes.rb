@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   get "/drinks", to: "drinks#index"
   get "/drinks/:id", to: "drinks#show"
+  get "/drinks/:id/edit", to: "drinks#edit"
 
   get "/bars/:id/drinks", to: "bars_drinks#index"
   get "/bars/:id/drinks/new", to: "bars_drinks#new"

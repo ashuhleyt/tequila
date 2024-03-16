@@ -13,7 +13,17 @@ RSpec.describe 'Child Show Page' do
       expect(page).to have_content(@drink.proof)
       expect(page).to have_content(@drink.made_in_mexico)
       expect(page).to have_content(@drink.id)
-      # save_and_open_page
+    end
+
+    it 'Then I see a link to update that Child "Update Child"' do 
+      expect(page).to have_link("Update #{@drink.name}")
+    end
+
+    it 'click the link i am taken to drinks/id/edit where i see a form to edit attributes' do 
+      expect(page).to have_link("Update #{@drink.name}")
+      click_link("Update #{@drink.name}")
+
+      expect(current_path).to eq("/drinks/#{@drink.id}/edit")
     end
   end
 end
