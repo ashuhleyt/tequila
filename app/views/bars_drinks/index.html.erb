@@ -13,4 +13,6 @@
   <% end %>
   <br>
   <%= link_to "Add a drink to #{@bar.name}!", "/bars/#{@bar.id}/drinks/new" %>
+  <br>
+  <%= link_to "Sort #{@bar.name}s Drinks Alphabetically", "/bars/#{@bar.id}/drinks/" %>
 </center>
