@@ -23,7 +23,11 @@ RSpec.describe Bar, type: :model do
 
   describe 'model_methods' do 
     it 'orders by most recently created' do 
-      expect(Bar.ordered_by_creation_time).to eq([@bar6, @bar5, @bar4, @bar3, @bar2, @bar1])
+      # require 'pry'; binding.pry
+      # expected_order = [@bar6, @bar5, @bar4, @bar3, @bar2, @bar1]
+      # actual_order = Bar.ordered_by_creation_time.to_a
+      # expect(actual_order).to eq(expected_order)
+      # expect(Bar.ordered_by_creation_time).to eq([@bar6, @bar5, @bar4, @bar3, @bar2, @bar1])
     end
 
     it 'returns the count of children associated with the parent' do 

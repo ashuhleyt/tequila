@@ -22,5 +22,9 @@ RSpec.describe 'Parent Child Index' do
 
       expect(current_path).to eq("/bars/#{@bar.id}/drinks/new")
     end
+
+    it 'I see a link to sort children alphabetically' do 
+      expect(page).to have_link("Sort #{@bar.name}s Drinks Alphabetically")
+    end
   end
 end

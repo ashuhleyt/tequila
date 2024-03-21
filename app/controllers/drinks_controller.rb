@@ -1,7 +1,7 @@
 class DrinksController < ApplicationController 
   def index 
     @bar = Bar.find_by(params[:id])
-    @drinks = Drink.all.true_drinks
+    @drinks = Drink.all
   end
 
   def show 
