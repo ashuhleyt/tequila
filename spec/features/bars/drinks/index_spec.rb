@@ -29,5 +29,12 @@ RSpec.describe 'Parent Child Index' do
       click_link("Sort #{@bar.name}s Drinks Alphabetically")
       expect(current_path).to eq("/bars/#{@bar.id}/drinks/")
     end
+
+    it 'I see a form that allows me to input a number value' do 
+  
+      expect(page).to have_selector('form', text: 'Change Value')
+      expect(page).to have_field('Proof', type: 'number')
+      #Only return records with more than `number` of `column_name`
+    end
   end
 end
