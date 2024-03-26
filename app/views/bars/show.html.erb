@@ -15,4 +15,6 @@
   <%= link_to "See #{@bar.name}s Drinks", "/bars/#{@bar.id}/drinks" %><br>
   <br>
   <%= link_to "Update #{@bar.name}", "/bars/#{@bar.id}/edit" %> 
+  <br>
+  <%= link_to "Delete #{@bar.name}", "/bars/#{@bar.id}/destroy", data: { confirm: 'Are you sure?' } %> 
 </center>
