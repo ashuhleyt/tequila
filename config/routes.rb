@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   post "/bars", to: "bars#create"
   get "/bars/:id/edit", to: "bars#edit"
   patch '/bars/:id', to: 'bars#update'
+  get "/bars/:id/destroy", to: "bars#destroy"
 
   get "/drinks", to: "drinks#index"
   get "/drinks/:id", to: "drinks#show"

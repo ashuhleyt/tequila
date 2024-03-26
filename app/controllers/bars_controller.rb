@@ -26,6 +26,13 @@ class BarsController < ApplicationController
     redirect_to "/bars/#{bar.id}"
   end
 
+  def destroy 
+    @bar = Bar.find(params[:id])
+    @bar.drink.destroy_all
+    @bar.destroy 
+    redirect_to "/bars", notice: "Bar was successfully deleted"
+  end
+
   private
   def bar_params
     params.permit(:name, :minimum_age, :rating)
