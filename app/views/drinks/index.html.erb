@@ -2,7 +2,7 @@
 
   <% @drinks.each do |drink| %>
     <br>
-    Name: <%= drink.name %>
+    Name: <%= drink.name %> <%= link_to "Edit #{drink.name}", "/drinks/#{drink.id}/edit" %>
     <br>
     Proof: <%= drink.proof %>
     <br>

@@ -1,7 +1,7 @@
 class BarsDrinksController < ApplicationController 
   def index 
     @bar = Bar.find(params[:id])
-    @drinks = @bar.drink
+    @drinks = @bar.drink.sort_alpha
   end
 
   def new 

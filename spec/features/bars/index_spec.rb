@@ -39,5 +39,10 @@ RSpec.describe 'Bar Index Page' do
       click_link("Create New Bar")
       expect(current_path).to eq("/bars/new")
     end
+
+    it 'next to every parent, I ee a link to edit their info' do 
+      click_link("Edit #{@bar1.name}")
+      expect(current_path).to eq("/bars/#{@bar1.id}/edit")
+    end
   end
 end

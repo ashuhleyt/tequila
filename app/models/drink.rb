@@ -8,4 +8,8 @@ class Drink < ApplicationRecord
   def self.true_drinks
     where(made_in_mexico: true)
   end
+
+  def self.sort_alpha 
+    order(:name)
+  end
 end
