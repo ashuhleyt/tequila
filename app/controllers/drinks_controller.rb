@@ -18,6 +18,12 @@ class DrinksController < ApplicationController
     redirect_to "/drinks/#{drink.id}"
   end
 
+  def destroy 
+    @drink = Drink.find(params[:id])
+    @drink.destroy 
+    redirect_to "/drinks", notice: "Drink was successfully deleted"
+  end
+
   private 
   def drink_params
     params.permit(:name, :proof, :made_in_mexico)

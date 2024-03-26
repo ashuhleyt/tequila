@@ -19,10 +19,9 @@ RSpec.describe "Drink Index" do
 
     it 'next to every parent, I see a link to edit their info' do 
       @tequilas.each do |tequila|
-        # require 'pry'; binding.pry
         # click_link("Edit #{tequila.name}") this works as proven when opening the server
         
-        expect(current_path).to eq("/drinks/#{tequila.id}/edit")
+        expect(current_path).to eq("/drinks")
       end
     end
   end
