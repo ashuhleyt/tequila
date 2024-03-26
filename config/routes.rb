@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   get "/drinks/:id", to: "drinks#show"
   get "/drinks/:id/edit", to: "drinks#edit"
   patch "/drinks/:id", to: "drinks#update"
+  get "/drinks/:id/destroy", to: "drinks#destroy"
 
   get "/bars/:id/drinks", to: "bars_drinks#index"
   get "/bars/:id/drinks/new", to: "bars_drinks#new"

@@ -8,5 +8,7 @@
   Drink ID: <%= @drink.id %>
   </h4>
 
-  <%= link_to "Update #{@drink.name}", "/drinks/#{@drink.id}/edit" %> 
+  <%= link_to "Update #{@drink.name}", "/drinks/#{@drink.id}/edit" %>
+  <br>
+  <%= link_to "Delete #{@drink.name}", "/drinks/#{@drink.id}/destroy", data: { confirm: 'Are you sure?' } %>
 </center>

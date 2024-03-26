@@ -25,5 +25,16 @@ RSpec.describe 'Child Show Page' do
 
       expect(current_path).to eq("/drinks/#{@drink.id}/edit")
     end
+
+    it 'I see a link to delete the parent' do 
+      expect(page).to have_link("Delete #{@drink.name}")
+    end
+
+    it 'when I click the link, I am taken back to the parent index page' do 
+      click_link("Delete #{@drink.name}")
+      expect(current_path).to eq("/drinks")
+
+      expect(page).to_not have_content(@drink.name)
+    end
   end
 end
