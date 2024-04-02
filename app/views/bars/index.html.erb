@@ -1,7 +1,7 @@
 <center><h2>BARS</h2>
   <% @bars.each do |bar| %>
     <br>
-    Name: <%= bar.name %> <%= link_to "Edit #{bar.name}", "/bars/#{bar.id}/edit" %>
+    Name: <%= bar.name %> <%= link_to "Edit #{bar.name}", "/bars/#{bar.id}/edit" %> <%= link_to "Delete #{bar.name}", "/bars/#{bar.id}/destroy", method: :post %>
     <br>
     Minimum Age: <%= bar.minimum_age %>
     <br>

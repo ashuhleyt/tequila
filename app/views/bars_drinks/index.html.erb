@@ -23,6 +23,7 @@
   <%= form_with url: "/bars/#{@bar.id}/drinks", method: :post, local: true do |f| %>
     Only Show Drinks at <%= "#{@bar.name}" %> Over <%= f.label :proof  %>
                                                    <%= f.number_field :proof %>
+                                                   <%= f.submit 'Submit' %>
   <% end %>
 
   </h2>

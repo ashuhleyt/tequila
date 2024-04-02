@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   get "/bars/:id/edit", to: "bars#edit"
   patch '/bars/:id', to: 'bars#update'
   get "/bars/:id/destroy", to: "bars#destroy"
+  post "/bars/:id/destroy", to: "bars#destroy"
 
   get "/drinks", to: "drinks#index"
   get "/drinks/:id", to: "drinks#show"
@@ -21,4 +22,5 @@ Rails.application.routes.draw do
   get "/bars/:id/drinks", to: "bars_drinks#index"
   get "/bars/:id/drinks/new", to: "bars_drinks#new"
   post "/bars/:id/drinks", to: "bars_drinks#create"
+  
 end
