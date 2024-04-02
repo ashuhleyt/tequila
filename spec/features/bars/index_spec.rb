@@ -44,5 +44,16 @@ RSpec.describe 'Bar Index Page' do
       click_link("Edit #{@bar1.name}")
       expect(current_path).to eq("/bars/#{@bar1.id}/edit")
     end
+
+    it 'next to every parent i see a link to delete the parent' do 
+      expect(page).to have_content("Delete #{@bar1.name}")
+    end
+
+    it 'when link is clicked, return to parent index where parent is no longer displayed' do 
+      expect(page).to have_content("Delete #{@bar1.name}")
+      click_link("Delete #{@bar1.name}")
+      expect(page).to have_current_path("/bars")
+      expect(page).to_not have_content(@bar1.name)
+    end
   end
 end

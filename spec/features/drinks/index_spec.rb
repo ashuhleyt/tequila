@@ -24,5 +24,12 @@ RSpec.describe "Drink Index" do
         expect(current_path).to eq("/drinks")
       end
     end
+
+    it 'I see a link to delete the child next to each name' do 
+      expect(page).to have_content("Delete #{@tequilas.first.name}")
+      click_link("Delete #{@tequilas.first.name}")
+      expect(page).to have_current_path("/drinks")
+      expect(page).to_not have_content(@tequilas.first.name)
+    end
   end
 end
