@@ -2,7 +2,7 @@
 
   <% @drinks.each do |drink| %>
     <br>
-    Name: <%= drink.name %> <%= link_to "Edit #{drink.name}", "/drinks/#{drink.id}/edit" %>
+    Name: <%= drink.name %> <%= link_to "Edit #{drink.name}", "/drinks/#{drink.id}/edit" %> <%= link_to "Edit #{drink.name}", "/drinks/#{drink.id}/edit" %> <%= link_to "Delete #{drink.name}", "/drinks/#{drink.id}/destroy", method: :post %>
     <br>
     Proof: <%= drink.proof %>
     <br>
